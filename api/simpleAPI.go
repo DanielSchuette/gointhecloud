@@ -7,9 +7,9 @@ import (
 
 // Book is a data structures holding information about author, title, and ISBN of a book
 type Book struct {
-	Title  string
-	Author string
-	ISBN   string
+	Title  string `json:"Title"`
+	Author string `json:"Author"`
+	ISBN   string `json:"ISBN"`
 }
 
 // ToJSON can be used to marshal Book structs to JSON
